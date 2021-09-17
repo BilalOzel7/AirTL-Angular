@@ -1,0 +1,135 @@
+<div class="container">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header"><h5 class="card-title">Acente Ekle</h5></div>
+      <div class="card-body">
+        <form [formGroup]="acenteAddForm">
+          <div class="col-md-6">
+    <div class="mb-3">
+    <label style=" font-size: 20px">Acente Adı</label>
+      <div class="form-group">
+         <input type="text" id="acenteAdi" formControlName="acenteAdi" 
+         class="form-control" placeholder="AcenteAdi"/>
+      </div>
+     </div>
+      <div class="mb-3">
+      <label style=" font-size: 20px">Email</label>
+      <div class="form-group">
+       <input type="email" id="eMail" formControlName="eMail" 
+       class="form-control" placeholder="Email"/>
+    </div>
+    </div>
+    <div class="mb-3">
+    <label style=" font-size: 20px">Adres</label>
+    <div class="form-group">
+   <input type="text" id="adres" formControlName="adres" 
+   class="form-control" placeholder="Adres"/>
+   </div>
+   </div>
+   <div class="mb-3">
+   <label style=" font-size: 20px">Sifre</label>
+    <div class="form-group">
+     <input type="password" id="sifre" formControlName="sifre" 
+     class="form-control" placeholder="sifre"/>
+  </div>
+   </div>
+  <div class="mb-3">
+  <label style=" font-size: 20px">Firma Unvan</label>
+  <div class="form-group">
+  <input type="text" id="firmaUnvan" formControlName="firmaUnvan" 
+  class="form-control" placeholder="firmaUnvan"/>
+  </div>
+  </div>
+  <div class="mb-3">
+    <label style=" font-size: 20px">Yetkili</label>
+      <div class="form-group">
+         <input type="text" id="yetkili" formControlName="yetkili" 
+         class="form-control" placeholder="yetkili"/>
+      </div>
+     </div>
+     <div class="mb-3">
+      <label style=" font-size: 20px">Sehir</label>
+        <div class="form-group">
+           <input type="number" id="sehirId" formControlName="sehirId" 
+           class="form-control" placeholder="sehir"/>
+        </div>
+       </div>
+       <div class="mb-3">
+        <label style=" font-size: 20px">Ulke</label>
+          <div class="form-group">
+             <input type="number" id="ulkeId" formControlName="ulkeId" 
+             class="form-control" placeholder="ulke"/>
+          </div>
+         </div>
+         <div class="mb-3">
+          <label style=" font-size: 20px">Telefon</label>
+            <div class="form-group">
+               <input type="text" id="telefon" formControlName="telefon" 
+               class="form-control" placeholder="telefon"/>
+            </div>
+           </div>
+          </div>
+          <div class="col-md-6">
+            <div class="mb-3">
+            <label style=" font-size: 20px">notlar</label>
+              <div class="form-group">
+                 <input type="text" id="notlar" formControlName="notlar" 
+                 class="form-control" placeholder="Notlar"/>
+              </div>
+             </div>
+              <div class="mb-3">
+              <label style=" font-size: 20px">Fatura Adres</label>
+              <div class="form-group">
+               <input type="text" id="faturaAdres" formControlName="faturaAdres" 
+               class="form-control" placeholder="FaturaAdres"/>
+            </div>
+            </div>
+            <div class="mb-3">
+            <label style=" font-size: 20px">Iban</label>
+            <div class="form-group">
+           <input type="text" id="Iban" formControlName="Iban" 
+           class="form-control" placeholder="Iban"/>
+           </div>
+           </div>
+           <div class="mb-3">
+           <label style=" font-size: 20px">Yetkili Telefon</label>
+            <div class="form-group">
+             <input type="text" id="yetkiliTel" formControlName="yetkiliTel" 
+             class="form-control" placeholder="Yetkili Telefon"/>
+          </div>
+           </div>
+          
+          
+             <div class="mb-3">
+              <label style=" font-size: 20px">Yetkili Email</label>
+                <div class="form-group">
+                   <input type="email" id="yetkiliEmail" formControlName="yetkiliEmail" 
+                   class="form-control" placeholder="yetkiliEmail"/>
+                </div>
+               </div>
+               <div class="mb-3">
+                <label style=" font-size: 20px">Kredi</label>
+                  <div class="form-group">
+                     <input type="number" id="kredi" formControlName="kredi" 
+                     class="form-control" placeholder="kredi"/>
+                  </div>
+                 </div>
+                 
+                  </div>
+  </form>
+      </div>
+      <div class="card-footer">
+    <button class="btn btn-fill btn-primary" (click)="add()">Ekle</button>
+  </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
