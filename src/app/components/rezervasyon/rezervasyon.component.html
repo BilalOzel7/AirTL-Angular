@@ -1,0 +1,24 @@
+<nz-table nzShowPagination
+nzShowSizeChanger>
+  <thead>
+    <tr>
+      <th> Adı</th>
+      <th>Soyad</th>
+      <th>Email</th>
+      <th>Telefon</th>
+      <th>Tarih</th>
+      <th>Fiyat</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of rezervasyonDetail">
+      <td>{{item.uyeAd}}</td>
+      <td>{{item.uyeSoyad}}</td>
+      <td>{{item.eMail}}</td>
+      <td>{{item.telefon}}</td>
+      <td>{{item.kayitTarih}}</td>
+      <td>{{item.fiyat}}</td>
+    </tr>
+  </tbody>
+</nz-table>
+

@@ -26,6 +26,12 @@ import en from '@angular/common/locales/en';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { RezervasyonComponent } from '../components/rezervasyon/rezervasyon.component';
+import { RezervasyonAddComponent } from '../components/rezervasyon-add/rezervasyon-add.component';
+import { RezervasyonTrueComponent } from '../components/rezervasyon-true/rezervasyon-true.component';
+import { RezervasyonFalseComponent } from '../components/rezervasyon-false/rezervasyon-false.component';
+import { TransferComponent } from '../components/transfer/transfer.component';
+import { TransferAddComponent } from '../components/transfer-add/transfer-add.component';
 
 registerLocaleData(en);
 
@@ -35,7 +41,13 @@ registerLocaleData(en);
     SurucuComponent,
     SurucuAddComponent,
     AcentesComponent,
-    AcentesAddComponent
+    AcentesAddComponent,
+    RezervasyonComponent,
+    RezervasyonAddComponent,
+    RezervasyonTrueComponent,
+    RezervasyonFalseComponent,
+    TransferComponent,
+    TransferAddComponent
   ],
   imports: [
     CommonModule,

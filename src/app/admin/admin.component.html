@@ -67,19 +67,27 @@
         <li nz-submenu nzTitle="Transferler" nzIcon="form">
           <ul>
             <li nz-menu-item nzMatchRouter>
-              <a>Tüm Transferler</a>
+              <a routerLink="/admin/gettransferdetails">Tüm Transferler</a>
             </li>
             <li nz-menu-item nzMatchRouter>
-              <a>Transfer Güncelle</a>
+              <a routerLink="/admin/transferadd">Transfer Ekle</a>
             </li>
           </ul>
         </li>
         <li nz-submenu  nzTitle="Rezervasyonlar" nzIcon="form">
           <ul>
             <li nz-menu-item nzMatchRouter>
-              <a>Tüm Rezervasyonlar</a>
+              <a routerLink="/admin/rezervasyon">Tüm Rezervasyonlar</a>
             </li>
-            
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/admin/rezervasyonadd">Rezervasyon Ekle</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/admin/bystatusfalse">Aktif Rezervasyonlar</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/admin/bystatustrue">Pasif Rezervasyonlar</a>
+            </li>
           </ul>
         </li>
         <li nz-submenu  nzTitle="Destek Talepleri" nzIcon="form">

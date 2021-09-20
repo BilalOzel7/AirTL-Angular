@@ -1,0 +1,19 @@
+export interface Transfer{
+    transferId:number;
+    ulkeId:number;
+    sehirId:number;
+    aracId:number;
+    dilId:number;
+    nereden:string;
+    nereye:string;
+    kisiSayisi:number;
+    bagajSayisi:number;
+    tarih:Date;
+    saat:Date;
+    km:number;
+    sureSaat:string;
+    fiyat:number;
+    ekstrasizFiyat:number;
+    uyeId:number;
+    doviz:number;
+}

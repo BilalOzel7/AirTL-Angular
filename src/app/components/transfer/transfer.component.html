@@ -1,0 +1,27 @@
+<nz-table nzShowPagination
+nzShowSizeChanger>
+  <thead>
+    <tr>
+      <th>Transfer Sahibi</th>
+      <th>İletisim</th>
+      <th>Nereden</th>
+      <th>Nereye</th>
+      <th>Kişi Sayısı</th>
+      <th>Bagaj Sayısı</th>
+      <th>Tarih</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of Transfer">
+      <td style="height:100px">{{item.uyeAd}} {{item.uyeSoyad}}</td>
+      <td style="height:1s00px">{{item.eMail}} 
+        {{item.telefon}}</td>
+      <td>{{item.nereden}}</td>
+      <td>{{item.nereye}}</td>
+      <td>{{item.kisiSayisi}}</td>
+      <td>{{item.bagajSayisi}}</td>
+      <td>{{item.tarih}}</td>
+      
+    </tr>
+  </tbody>
+</nz-table>
