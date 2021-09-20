@@ -1,0 +1,149 @@
+<nz-layout class="app-layout">
+    <nz-sider class="menu-sidebar"
+              nzCollapsible
+              nzWidth="256px"
+              nzBreakpoint="md"
+              [(nzCollapsed)]="isCollapsed"
+              [nzTrigger]="null">
+      <div class="sidebar-logo">
+        <a href="https://ng.ant.design/" target="_blank">
+          <img style="width:200px;" src="assets/logo.png" alt="logo">
+        </a>
+      </div>
+      <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+        <li nz-submenu  nzTitle="Dashboard" nzIcon="dashboard">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/welcome">Welcome</a>
+            </li>
+            
+            <li nz-menu-item nzMatchRouter>
+              <a>Workplace</a>
+            </li>
+          </ul>
+        </li>
+      
+        <li nz-submenu  nzTitle="Acenteler" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="">Tüm Acenteler</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="">Acente Ekle</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Aktif/Pasif Acenteler</a>
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Sürücüler" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a  routerLink="">Tüm Sürücüler</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Sürücü Ekle</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Aktif/Pasif Sürücüler</a>
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Üyeler" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a>Tüm Üyeler</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Üye Ekle</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Aktif/Pasif Üyeler</a>
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu nzTitle="Transferler" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a>Tüm Transferler</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Transfer Güncelle</a>
+            </li>
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Rezervasyonlar" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a>Tüm Rezervasyonlar</a>
+            </li>
+            
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Destek Talepleri" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a>Üye Talepleri</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Acente Talepleri</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Sürücü Talepleri</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Tedarikçi Talepleri</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Tüm Talepler</a>
+            </li>
+            
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Tanımlamalar" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a>Şehirler</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Rotalar</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Popüler Rotalar</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Araç Tipleri</a>
+            </li>
+            <li nz-menu-item nzMatchRouter>
+              <a>Hizmet Noktaları</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nz-sider>
+    <nz-layout>
+      <nz-header>
+       
+        <div class="app-header">
+          <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+              <i class="trigger"
+                 nz-icon
+                 [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+              ></i>
+            
+               
+          </span> 
+         <span style="color:rgb(39, 79, 139); font-size: 20px;  margin: 430px; font-weight:bold;">ACENTE PANELİ</span>
+        </div>
+      </nz-header>
+      <nz-content>
+        <div class="inner-content">
+          <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+  
+
+
+

@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { AcenteDetail } from 'src/app/models/acenteDetail';
 import { AcenteService } from 'src/app/services/acente.service';
+import { NzTableModule } from 'ng-zorro-antd/table';
 
 @Component({
-  selector: 'app-acente',
-  templateUrl: './acente.component.html',
-  styleUrls: ['./acente.component.css']
+  selector: 'app-acentes',
+  templateUrl: './acentes.component.html',
+  styleUrls: ['./acentes.component.css']
 })
-export class AcenteComponent implements OnInit {
+export class AcentesComponent implements OnInit {
   acenteDetails:AcenteDetail[]=[]
   constructor(private acenteService: AcenteService) { }
 
   ngOnInit() {
-
     this.Details();
   }
 

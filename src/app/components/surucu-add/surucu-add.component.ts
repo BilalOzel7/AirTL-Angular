@@ -1,38 +1,46 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
-import { AcenteService } from 'src/app/services/acente.service';
+import { SurucuService } from 'src/app/services/surucu.service';
 
 @Component({
-  selector: 'app-acente-add',
-  templateUrl: './acente-add.component.html',
-  styleUrls: ['./acente-add.component.css']
+  selector: 'app-surucu-add',
+  templateUrl: './surucu-add.component.html',
+  styleUrls: ['./surucu-add.component.css']
 })
-export class AcenteAddComponent implements OnInit {
-acenteAddForm!:FormGroup;
+export class SurucuAddComponent implements OnInit {
+  surucuAddForm!:FormGroup;
   constructor(private formBuilder: FormBuilder,
-    private acenteService: AcenteService, private toastrService:ToastrService) { }
+    private surucuService: SurucuService, private toastrService:ToastrService) { }
 
   ngOnInit() {
-    this.createAcenteAddForm();
+    this.createSurucuAddForm();
   }
-  createAcenteAddForm() {
-    this.acenteAddForm = this.formBuilder.group({
-      acenteAdi: ['', Validators.required],
+
+  createSurucuAddForm() {
+    this.surucuAddForm = this.formBuilder.group({
+      acenteId: ['', Validators.required],
       eMail: ['', Validators.required],
       sifre: ['', Validators.required],
       adres: ['', Validators.required],
-      firmaUnvan: ['', Validators.required],
-      yetkili: ['', Validators.required],
+      surucuAdi: ['', Validators.required],
+      plaka: ['', Validators.required],
       telefon: ['', Validators.required],
       sehirId: ['', Validators.required],
       ulkeId: ['', Validators.required],
       notlar: ['', Validators.required],
       faturaAdres: ['', Validators.required],
       ıban: ['', Validators.required],
-      yetkiliTel: ['', Validators.required],
-      yetkiliEmail: ['', Validators.required],
+      tcKimlikNo: ['', Validators.required],
+      surucuTip: ['', Validators.required],
+      surucuKomisyon: ['', Validators.required],
+      vergiDaire: ['', Validators.required],
+      vergiDaireNo: ['', Validators.required],
       kredi: ['', Validators.required],
+      dilId: ['', Validators.required],
+      kayitTarih: ['', Validators.required],
+      sozlesme: ['', Validators.required],
+      sozlesmeOnayTarih: ['', Validators.required],
      
     });
   }
@@ -42,9 +50,9 @@ acenteAddForm!:FormGroup;
     //   return this.toastrService.error('Formunuz eksik', 'Dikkat');
     // }
 
-    let acenteModel = Object.assign({}, this.acenteAddForm.value);
+    let surucuModel = Object.assign({}, this.surucuAddForm.value);
 
-    this.acenteService.add(acenteModel).toPromise().then(response => {
+    this.surucuService.add(surucuModel).toPromise().then(response => {
       this.toastrService.success(response.message, 'Başarılı');
     }).catch(response => {
       console.log({error: response.error});

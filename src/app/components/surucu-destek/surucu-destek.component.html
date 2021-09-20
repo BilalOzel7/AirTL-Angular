@@ -1,0 +1,20 @@
+<nz-table nzShowPagination
+nzShowSizeChanger>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Konu</th>
+      <th>Açıklama</th>
+      <th>Sürücü</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of surucuDestek">
+      <td>{{item.Id}}</td>
+      <td>{{item.konu}}</td>
+      <td>{{item.aciklama}}</td>
+      <td>{{item.surucuId}}</td>
+      
+    </tr>
+  </tbody>
+</nz-table>

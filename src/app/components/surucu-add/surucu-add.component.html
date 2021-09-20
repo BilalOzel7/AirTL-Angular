@@ -1,0 +1,148 @@
+<form nz-form  [formGroup]="surucuAddForm" >
+  <div  nz-row  >
+  <div  class="ant-col-lg-12">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Acente Adı</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzValidatingTip="Validating...">
+      <input nz-input formControlName="acenteId" placeholder="AcenteAdı" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sürücü Adı</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzValidatingTip="Validating...">
+      <input nz-input formControlName="surucuAdi" placeholder="Sürücü Adı" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Telefon</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="telefon" placeholder="Telefon" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>E-mail</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="eMail" placeholder="email" type="email" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sifre</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzDisableAutoTips nzErrorTip="Please input your password!">
+      <input nz-input type="password" formControlName="sifre" placeholder="Sifre" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Plaka</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzValidatingTip="Validating...">
+      <input nz-input formControlName="plaka" placeholder="Plaka" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>TC Kimlik No</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="tcKimlikNo" placeholder="TC Kimlik No" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Dil</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="dilId" placeholder="Dil" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Ulke</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="ulkeId" placeholder="Ulke" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sehir</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="sehirId" placeholder="Sehir" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Iban</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="ıban" placeholder="Iban"  />
+    </nz-form-control>
+  </nz-form-item>
+</div>
+  <div class="ant-col-lg-12">
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Adres</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="adres" placeholder="Adres"  />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Fatura Adres</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="faturaAdres" placeholder="Fatura Adres"  />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Notlar</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="notlar" placeholder="Notlar"  />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Kredi</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="kredi" placeholder="Kredi" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sürücü Tip</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="surucuTip" placeholder="Notlar" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sürücü Komisyon</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="kredi" placeholder="Kredi" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sözleşme</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="sozlesme" placeholder="Sözleşme" type="number" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Sözleşme Onay Tarih</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="sozlesmeOnayTarih" placeholder="Sözleşme Onay Tarih" type="datetime" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Kayıt Tarih</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="kayitTarih" placeholder="Kayıt Tarih" type="datetime" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Vergi Daire</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="vergiDaire" placeholder="Vergi Daire"  />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Vergi Daire No</nz-form-label>
+    <nz-form-control [nzSpan]="12">
+      <input nz-input formControlName="vergiDaireNo" placeholder="Vergi Daire No"  />
+    </nz-form-control>
+  </nz-form-item>
+  <br/>
+  <nz-form-item>
+    <nz-form-control [nzOffset]="10" [nzSpan]="12">
+      <button nz-button nzType="primary" (click)="add()" >Sürücü Ekle</button>
+    </nz-form-control>
+  </nz-form-item>
+</div>
+</div>
+</form>

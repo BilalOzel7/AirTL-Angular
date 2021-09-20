@@ -1,0 +1,67 @@
+<nz-layout class="suruculer-layout">
+    <nz-sider class="menu-sidebar"
+              nzCollapsible
+              nzWidth="256px"
+              nzBreakpoint="md"
+              [(nzCollapsed)]="isCollapsed"
+              [nzTrigger]="null">
+      <div class="sidebar-logo">
+        <a href="https://ng.ant.design/" target="_blank">
+          <img style="width:200px;" src="assets/logo.png" alt="logo">
+        </a>
+      </div>
+      <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+        <li nz-submenu  nzTitle="Rezervasyonlar" nzIcon="dashboard">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+              <a routerLink="/welcome">Aktif İşler</a>
+            </li>
+            
+            <li nz-menu-item nzMatchRouter>
+              <a>Biten İşler</a>
+            </li>
+          </ul>
+        </li>
+      
+        <li nz-submenu  nzTitle="Destek Talebi" nzIcon="form">
+          <ul>
+            <li nz-menu-item nzMatchRouter>
+            <a routerLink="/suruculer/surucudestek-add">Detsek Talebi oluştur</a>
+          </li>
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Profil Bilgileri" nzIcon="form">
+          <ul>
+            
+          </ul>
+        </li>
+        <li nz-submenu  nzTitle="Çıkış" nzIcon="form">
+          <ul>
+            
+          </ul>
+        </li>
+        
+      </ul>
+    </nz-sider>
+    <nz-layout>
+      <nz-header>
+        <div class="app-header">
+          <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+              <i class="trigger"
+                 nz-icon
+                 [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+              ></i>
+          </span>
+          <span style="color:rgb(39, 79, 139); font-size: 20px;  margin: 430px; font-weight:bold;">SÜRÜCÜ PANELİ</span>
+        </div>
+      </nz-header>
+      <nz-content>
+        <div class="inner-content">
+          <router-outlet></router-outlet>
+        </div>
+      </nz-content>
+    </nz-layout>
+  </nz-layout>
+  
+
+

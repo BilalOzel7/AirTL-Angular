@@ -1,0 +1,29 @@
+export interface SurucuDetail{
+    surucuId:number;
+    acenteId:number;
+    ulkeId:number;
+    sehirId:number;
+    dilId:number;
+    surucuAdi:string;
+    eMail:string;
+    telefon:string;
+    plaka:string;
+    kayitTarih:Date;
+    tcKimlikNo:string;
+    adres:string;
+    sifre:string;
+    surucuTip:number;
+    surucuKomisyon:number;
+    sozlesme:number;
+    SozlesmeOnayTarih:Date;
+    faturaBilgisi:string;
+    iban:string;
+    vergiDaire:string;
+    vergiDaireNo:string;
+    kredi:number;
+    notlar:string;
+    acenteAd:string;
+    ulkeAdi:string;
+    sehirAd:string;
+    dilAd:string;
+}

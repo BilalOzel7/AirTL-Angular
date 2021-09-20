@@ -1,0 +1,22 @@
+<nz-table nzShowPagination
+nzShowSizeChanger>
+  <thead>
+    <tr>
+      <th>Acente Adı</th>
+      <th>Sürücü Adı</th>
+      <th>Email</th>
+      <th>Telefon</th>
+      <th>Adres</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of surucuDetails">
+      <td>{{item.acenteAd}}</td>
+      <td>{{item.surucuAdi}}</td>
+      <td>{{item.eMail}}</td>
+      <td>{{item.telefon}}</td>
+      <td>{{item.adres}}</td>
+      
+    </tr>
+  </tbody>
+</nz-table>

@@ -13,12 +13,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
-import { SurucuComponent } from './pages/surucu/surucu.component';
-import { AcenteComponent } from './pages/acente/acente.component';
+
+
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
-import { AcenteAddComponent } from './pages/acente/acente-add/acente-add.component';
+
 import {ToastrModule} from "ngx-toastr";
+import { NzFormModule } from 'ng-zorro-antd/form';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzGridModule } from 'ng-zorro-antd/grid';
 
 
 registerLocaleData(en);
@@ -26,9 +30,9 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    SurucuComponent,
-    AcenteComponent,
-    AcenteAddComponent
+    
+   
+    
     
   ],
   imports: [
@@ -43,6 +47,10 @@ registerLocaleData(en);
     NzTableModule,
     NzDividerModule,
     ReactiveFormsModule,
+    NzFormModule,
+    NzButtonModule,
+    NzInputModule,
+    NzGridModule,
     ToastrModule.forRoot({
       positionClass:"toast-bottom-right"
     }),

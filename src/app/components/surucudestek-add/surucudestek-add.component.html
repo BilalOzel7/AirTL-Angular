@@ -1,0 +1,26 @@
+<p style="font-size:22px; font-weight:bold;text-align:center;" >Destek Talebi Oluşturma Sayfası</p>
+<form nz-form  [formGroup]="surucuDestekAddForm" style="border: 1px solid; margin:75px; height:290px; width:800px">
+  <div  nz-row  >
+  <div  class="ant-col-lg-18">
+  <nz-form-item style="margin-top:15px;">
+    <nz-form-label [nzSpan]="10" nzRequired>Konu</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzValidatingTip="Validating...">
+      <input nz-input formControlName="konu" placeholder="Lütfen konuyu yazınız" />
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+    <nz-form-label [nzSpan]="10" nzRequired>Açıklama</nz-form-label>
+    <nz-form-control [nzSpan]="12" nzErrorTip="Please write something here!">
+      <textarea style="width:300px; height:190px" formControlName="aciklama" nz-input rows="2" placeholder="Lütfen detayları yazınız."></textarea>
+    </nz-form-control>
+  </nz-form-item>
+  
+  </div>
+  
+  
+</div>
+
+</form>
+<div style="position:absolute; right:290px">
+<button  nz-button nzType="primary" (click)="add()" style="width: 80px;">Gönder</button>
+</div>
