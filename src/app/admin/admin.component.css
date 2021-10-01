@@ -78,7 +78,7 @@
   .inner-content {
     padding: 80px;
     background: #fff;
-    height: 100%;
+    height: auto;
     width: 100%;
     float: left;
   }

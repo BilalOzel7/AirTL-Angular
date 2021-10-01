@@ -17,7 +17,7 @@ const routes: Routes = [{ path: '', component: AdminComponent ,children:[
    path:'acentes-add' , component:AcentesAddComponent
   },
   {
-    path:'acentes' , component:AcentesComponent
+    path:'getacentedetails' , component:AcentesComponent
   },
   {
     path:'surucu-add' , component:SurucuAddComponent

@@ -21,4 +21,9 @@ return this.httpClient.get<ListResponseModel<TransferDetail>>(newPath);
 add(transfer:Transfer):Observable<ResponseModel>{
   return this.httpClient.post<ResponseModel>(this.apiURL +"admin/transferadd",transfer)
 }
+
+GetAllDate(): Observable<ListResponseModel<Transfer>> {
+  let newPath = this.apiURL + "admin/gettransferbytarih"
+return this.httpClient.get<ListResponseModel<Transfer>>(newPath);
+}
 }
